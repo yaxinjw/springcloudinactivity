@@ -1,0 +1,25 @@
+#server:
+#    port: 8763
+#
+#spring:
+#    application:
+#        name: eurekaclient
+#
+#eureka:
+#    client:
+#        serviceUrl:
+#            # 注册中心地址
+#            defaultZone: http://localhost:8761/eureka/
+
+spring:
+    cloud:
+        config:
+            name: eurekaclient
+            label: master
+            discovery:
+                enabled: true
+                serviceId: config
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
