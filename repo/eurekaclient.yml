@@ -1,20 +1,19 @@
 server:
-    port: 8764
+  port: 8763
 spring:
-    application:
-        name: eurekaclient
-    rabbitmq:
-        host: 192.168.137.2
-        port: 5672
-        username: admin
-        password: 123456
-        virtualHost: /
-        publisherConfirms: true
-
+  application:
+    name: eurekaclient
+  rabbitmq:
+    host: 192.168.137.2
+    port: 5672
+    username: admin
+    password: 123456
+    virtualHost: /
+    publisherConfirms: true
 
 # Spring Boot 2.0 以后，actuator 默认只开启 health 和 info 端点，要使用 refresh 端点需要通过 management 指定
 management:
-    endpoints:
-        web:
-            exposure:
-                include: refresh,health,info,bus-refresh
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
