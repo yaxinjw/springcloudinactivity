@@ -4,7 +4,7 @@ spring:
   application:
     name: eurekaclient
   rabbitmq:
-    host: 192.168.137.2
+    host: 192.168.1.5
     port: 5672
     username: admin
     password: 123456
